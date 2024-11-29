@@ -61,3 +61,4 @@ Este projeto utiliza as seguintes dependências Maven:
     <artifactId>jfreechart</artifactId>
     <version>1.0.13</version>
 </dependency>
+```
