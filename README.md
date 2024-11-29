@@ -1,27 +1,29 @@
 # ExemploARQUIVO15_XLS
 
-Este projeto é um exemplo de como utilizar as bibliotecas Apache POI para manipulação de arquivos Excel (XLS/XLSX), Log4j para log e JFreeChart para a criação de gráficos em Java.
+Este projeto é um exemplo de como integrar várias bibliotecas Java para criar uma aplicação de interface gráfica com **Swing**, manipulação de arquivos Excel, gráficos interativos, criptografia, e desenhos gráficos utilizando `stddraw`.
 
-## Descrição
+## Funcionalidades
 
-Este projeto demonstra a leitura e manipulação de arquivos Excel, geração de gráficos e exibição de logs para acompanhamento da execução do programa.
-
-### Funcionalidades:
-- Leitura e escrita de arquivos Excel (XLS, XLSX)
-- Geração de gráficos utilizando JFreeChart
-- Logs detalhados utilizando Apache Log4j
-- Interface gráfica para visualização de gráficos e dados
-
-## Tecnologias Utilizadas
-
-- **Apache POI**: Biblioteca Java para manipulação de arquivos do Microsoft Office (Excel, Word, etc.)
-- **Log4j**: Sistema de log para registrar eventos e facilitar o diagnóstico e monitoramento.
-- **JFreeChart**: Biblioteca para criação de gráficos dinâmicos e interativos.
-- **Maven**: Ferramenta de automação de construção para Java.
+- **Interface Gráfica com Swing**: Utilização de menus e `JInternalFrame` para criar uma aplicação modular e com janelas internas.
+- **Manipulação de Arquivos Excel**: Leitura e escrita de planilhas `.xlsx` com Apache POI.
+- **Geração de Gráficos**: Criação de gráficos interativos com a biblioteca JFreeChart.
+- **Criptografia**: Funções de criptografia para proteger dados sensíveis.
+- **Desenhos Gráficos**: Utilização da biblioteca `stddraw` para desenhar formas gráficas e realizar manipulação visual.
 
 ## Dependências
 
-O projeto utiliza as seguintes dependências do Maven:
+Este projeto utiliza as seguintes dependências Maven:
+
+- **Apache POI**: Biblioteca para manipulação de arquivos Excel.
+  - `poi` (versão 5.2.3)
+  - `poi-ooxml` (versão 5.2.3)
+- **Apache Commons Collections**: Para manipulação de coleções avançadas.
+  - `commons-collections4` (versão 4.4)
+- **Log4j**: Biblioteca para logging detalhado de eventos.
+  - `log4j-core` (versão 2.20.0)
+  - `log4j-api` (versão 2.20.0)
+- **JFreeChart**: Biblioteca para a criação de gráficos interativos.
+  - `jfreechart` (versão 1.0.13)
 
 ```xml
 <dependency>
@@ -47,6 +49,7 @@ O projeto utiliza as seguintes dependências do Maven:
     <artifactId>log4j-core</artifactId>
     <version>2.20.0</version>
 </dependency>
+
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
